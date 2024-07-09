@@ -1,24 +1,24 @@
-# Understanding LSTM Architecture and Components
+# LSTM Mimarisi ve Bileşenleri
 
-LSTMs (Long Short-Term Memory) are known for their ability to learn long-term dependencies. An LSTM cell consists of three gates (forget gate, input gate, output gate) and a cell state.
+LSTM'ler (Long Short-Term Memory), uzun süreli bağımlılıkları öğrenme yeteneği ile bilinirler. LSTM hücresi, üç kapıdan (forget gate, input gate, output gate) ve hücre durumundan oluşur.
 
-## Contents
+## İçindekiler
 
-- [Cell State](#cell-state)
-- [Forget Gate](#forget-gate)
-- [Input Gate](#input-gate)
-- [Output Gate](#output-gate)
-- [LSTM Operation Steps](#lstm-operation-steps)
-- [Code Examples](#code-examples)
-- [Importance of LSTM Parameters](#importance-of-lstm-parameters)
+- [Hücre Durumu (Cell State)](#hücre-durumu-cell-state)
+- [Unutma Kapısı (Forget Gate)](#unutma-kapısı-forget-gate)
+- [Giriş Kapısı (Input Gate)](#giriş-kapısı-input-gate)
+- [Çıkış Kapısı (Output Gate)](#çıkış-kapısı-output-gate)
+- [LSTM'nin Çalışma Aşamaları](#lstmnin-çalışma-aşamaları)
+- [Kod Örnekleri](#kod-örnekleri)
+- [LSTM Parametrelerinin Önemi](#lstm-parametrelerinin-önemi)
 
-## Cell State
+## Hücre Durumu (Cell State)
 
-The cell state carries information and enables the learning of long-term dependencies.
+Hücre durumu, bilgiyi taşır ve uzun süreli bağımlılıkları öğrenmeyi sağlar.
 
-## Forget Gate
+## Unutma Kapısı (Forget Gate)
 
-The forget gate determines what information should be discarded from the cell state.
+Unutma kapısı, hücre durumundan neyin atılacağını belirler.
 
 ```python
 import torch
